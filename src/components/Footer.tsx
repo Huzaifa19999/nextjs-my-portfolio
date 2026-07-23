@@ -20,15 +20,15 @@ export default function Footer() {
           </div>
           <div>
             <span className="text-sm font-bold text-white block">{PERSONAL_INFO.name}</span>
-            <span className="text-xs text-gray-500 font-mono">Senior Software Engineer</span>
+            <span className="text-xs text-gray-500 font-mono">Software Engineer</span>
           </div>
         </div>
 
         {/* Middle: Socials */}
         <div className="flex items-center gap-4 text-xs font-mono text-gray-400">
-          <a href={PERSONAL_INFO.github} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+          <a href={PERSONAL_INFO.github} target="https://github.com/Huzaifa19999" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
           <span>•</span>
-          <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+          <a href={PERSONAL_INFO.linkedin} target="https://www.linkedin.com/in/huzaifa-abdul-qadir-25b3022b8/" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
           <span>•</span>
           <a href={PERSONAL_INFO.twitter} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Twitter</a>
         </div>

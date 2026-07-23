@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Horizon revolutionizes online retail through Three.js and Framer Motion integration in Next.js. Users can rotate, explode visual layers, change colors dynamically, and inspect products with photo-realistic detail.",
     category: "frontend",
     image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Next.js", "Three.js", "React Three Fiber", "Framer Motion", "Stripe API"],
+    tags: ["Next.js", "Node.js", "React Three Fiber", "Framer Motion", "Stripe API"],
     featured: true,
     demoUrl: "https://example.com/horizon-3d",
     githubUrl: "https://github.com/example/horizon-3d",
@@ -181,13 +181,14 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "Software Engineer",
     company: "Technyx Systems",
     period: "2025 - Present",
-    location: "Karachi, Sindh, Pakistan",
+    location: "Onsite-Karachi, Sindh, Pakistan",
     description: [
-      "Led the technical architecture of a Next.js enterprise SaaS platform serving 500k+ active users.",
-      "Engineered real-time collaboration canvas reducing initial page load times by 45%.",
-      "Mentored a team of 8 frontend & full-stack engineers on performance optimization & design patterns."
+      "Designed and implemented interactive, user-friendly web applications using React.js and Next.js in collaboration with cross functional teams",
+      "Specialized in building reusable components and optimizing frontend performance to improve scalability and maintainability",
+      "Worked with a team to develop cross-platform mobile applications using React Native, ensuring seamless performance across iOS and Android.",
+      "Collaborated with designers, backend developers, and QA engineers to deliver high-quality software solutions within deadlines"
     ],
-    skills: ["Next.js", "TypeScript", "GraphQL", "Tailwind CSS", "Framer Motion", "AWS"],
+    skills: ["Next.js", "TypeScript", "MySQL", "Tailwind CSS", "React.js", "Node.js","Express.js","React-Native"],
     type: "work"
   },
   {
@@ -195,13 +196,13 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "Software Engineer Intern",
     company: "360XpertSolutions",
     period: "2024 - 2025",
-    location: "Onsite",
+    location: "Onsite-Karachi, Sindh, Pakistan",
     description: [
-      "Built interactive web applications with dynamic animations and custom WebGL background shaders.",
-      "Refactored legacy monolith into modular Next.js micro-frontends with 99.9% uptime.",
-      "Collaborated closely with product designers to establish a company-wide design system."
+      "Designed and implemented interactive, user-friendly web applications using React.js and Next.js in collaboration with cross functional teams",
+      "Specialized in building reusable components and optimizing frontend performance to improve scalability and maintainability",
+      "Worked with a team to develop cross-platform mobile applications using React Native, ensuring seamless performance across iOS and Android.",
     ],
-    skills: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js", "Jest"],
+    skills: ["Next.js", "TypeScript", "MySQL", "Tailwind CSS", "React.js", "Node.js","Express.js","React-Native"],
     type: "work"
   },
   // {
@@ -219,15 +220,15 @@ export const EXPERIENCES: ExperienceItem[] = [
   // },
   {
     id: "edu-1",
-    role: "B.S. in Computer Science & Software Engineering",
-    company: "University of California, Berkeley",
-    period: "2015 - 2019",
-    location: "Berkeley, CA",
+    role: "BS in Software Engineering",
+    company: "University of Karachi, Karachi",
+    period: "2020 - 2024",
+    location: "Karachi, Sindh",
     description: [
       "Graduated with Honors (Magna Cum Laude). Focus on Distributed Systems and Human-Computer Interaction.",
       "President of the Web Development Student Association & Hackathon Lead."
     ],
-    skills: ["Algorithms", "Data Structures", "System Design", "UI/UX Research", "Machine Learning"],
+    skills: ["Algorithms", "Data Structures", "System Design", "RDMBS", "Deep Learning"],
     type: "education"
   }
 ];
@@ -235,16 +236,16 @@ export const EXPERIENCES: ExperienceItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "test-1",
-    name: "Elena Rostova",
-    role: "VP of Product",
-    company: "Aura Global",
+    name: "Abuzar Thanvi",
+    role: "Software Engineer",
+    company: "Technyx Systems",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80",
-    content: "Alex is an extraordinary developer who balances technical depth with a refined eye for design. The animations and responsiveness he delivered on our flagship portal left our board and users thoroughly impressed.",
+    content: "Huzaifa is an extraordinary developer who balances technical depth with a refined eye for design. The animations and responsiveness he delivered on our flagship portal left our board and users thoroughly impressed.",
     rating: 5
   },
   {
     id: "test-2",
-    name: "Marcus Vance",
+    name: "Muhammad Bilal Haneef",
     role: "Founder & CEO",
     company: "Hyperion AI",
     avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80",
@@ -253,7 +254,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "test-3",
-    name: "Sarah Chen",
+    name: "Syed Hasan Raza",
     role: "Head of Engineering",
     company: "Orbit Systems",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80",
