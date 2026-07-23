@@ -3,8 +3,9 @@ import { Project, SkillCategory, ExperienceItem, Testimonial, StatItem } from '.
 export const PERSONAL_INFO = {
   name: "Huzaifa Abdul Qadir",
   role: "Software Engineer",
+  avatar: "/profile.jfif",
   tagline: "Building hyper-scale web applications, intuitive interfaces, and AI-driven experiences with sleek animations.",
-  bio: "I'm a passionate Software Engineer with 1+ years of experience crafting modern digital products. Specialized in Next.js, React, Node.js, and high-performance WebGL/Framer Motion animations. Dedicated to clean code, pixel-perfect design systems, and seamless user experiences.",
+  bio: "I'm a passionate Software Engineer with experience crafting modern digital products. Specialized in Next.js, React, Node.js, and high-performance WebGL/Framer Motion animations. Dedicated to clean code, pixel-perfect design systems, and seamless user experiences.",
   location: "Karachi, Sindh, Pakistan",
   email: "huzaifaqadir10@gmail.com",
   github: "https://github.com",

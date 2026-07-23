@@ -63,10 +63,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-cyan-400 p-[1px] shadow-lg shadow-indigo-500/20">
-            <div className="w-full h-full bg-[#0b0e17] rounded-[11px] flex items-center justify-center transition-all group-hover:bg-transparent">
-              <Code2 className="w-5 h-5 text-indigo-400 group-hover:text-white transition-colors" />
-            </div>
+          <div className="relative w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-600 via-purple-600 to-cyan-400 p-[2px] shadow-lg shadow-indigo-500/20 overflow-hidden">
+            <img
+              src={PERSONAL_INFO.avatar}
+              alt={PERSONAL_INFO.name}
+              className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
           <div>
             <span className="text-lg font-bold tracking-tight text-white flex items-center gap-1.5">

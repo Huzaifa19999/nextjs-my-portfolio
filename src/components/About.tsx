@@ -32,37 +32,61 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        {/* Section Header with Large Profile Picture Showcase */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+          
+          {/* Profile Picture Spotlight */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border border-indigo-500/30 text-indigo-300 text-xs font-mono"
+            className="lg:col-span-5 flex justify-center"
           >
-            <UserCheck className="w-3.5 h-3.5" />
-            <span>ABOUT ME</span>
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl p-3 glass-card border border-white/20 overflow-hidden shadow-2xl group">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                <img
+                  src={PERSONAL_INFO.avatar}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090e] via-transparent to-transparent opacity-60" />
+              </div>
+            </div>
           </motion.div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-extrabold text-white tracking-tight"
-          >
-            Engineering <span className="text-gradient-primary">Excellence</span> & Modern Visuals
-          </motion.h2>
+          {/* Bio Text */}
+          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border border-indigo-500/30 text-indigo-300 text-xs font-mono"
+            >
+              <UserCheck className="w-3.5 h-3.5" />
+              <span>ABOUT ME</span>
+            </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-300 text-base md:text-lg font-light leading-relaxed"
-          >
-            {PERSONAL_INFO.bio}
-          </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-3xl md:text-5xl font-extrabold text-white tracking-tight"
+            >
+              Engineering <span className="text-gradient-primary">Excellence</span> & Modern Visuals
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-gray-300 text-base md:text-lg font-light leading-relaxed"
+            >
+              {PERSONAL_INFO.bio}
+            </motion.p>
+          </div>
+
         </div>
 
         {/* Stats Grid */}

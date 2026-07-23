@@ -101,17 +101,49 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right Column: Animated Visual Card / Interactive Terminal Mockup */}
+        {/* Right Column: Animated Visual Profile Card & Interactive Terminal */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative mx-auto max-w-md lg:max-w-none">
+          <div className="relative mx-auto max-w-md lg:max-w-none space-y-6">
             
             {/* Outer Glow Ring */}
-            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 opacity-30 blur-xl animate-pulse" />
+            <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 opacity-25 blur-2xl animate-pulse pointer-events-none" />
+
+            {/* Prominent Featured Large Profile Picture Card */}
+            <div className="relative glass-card rounded-3xl p-3 border border-white/20 overflow-hidden shadow-2xl group">
+              <div className="relative w-full h-80 sm:h-[400px] rounded-2xl overflow-hidden bg-gradient-to-tr from-indigo-950 via-purple-950 to-[#07090e]">
+                <img
+                  src={PERSONAL_INFO.avatar}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                
+                {/* Subtle Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090e] via-transparent to-transparent opacity-80" />
+
+                {/* Top Badge Overlay */}
+                <div className="absolute top-4 left-4 glass-panel px-3.5 py-1.5 rounded-full border border-white/15 text-xs text-white font-mono flex items-center gap-2">
+                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>{PERSONAL_INFO.name}</span>
+                </div>
+
+                {/* Bottom Overlay Info */}
+                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-2">
+                  <div className="glass-panel px-3 py-1.5 rounded-xl border border-white/15 text-xs text-gray-200 font-mono">
+                    Software Engineer
+                  </div>
+
+                  <div className="bg-[#0b0e17]/90 border border-emerald-500/40 px-3 py-1.5 rounded-full flex items-center gap-2 shadow-lg">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                    <span className="text-xs font-mono text-emerald-300 font-semibold">AVAILABLE FOR HIRE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Terminal Container */}
             <div className="relative glass-card rounded-2xl overflow-hidden border border-white/15 p-6 space-y-6">
@@ -125,7 +157,7 @@ export default function Hero() {
                 </div>
                 <div className="text-xs font-mono text-gray-400 flex items-center gap-1.5">
                   <Terminal className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>architect-session.ts</span>
+                  <span>huzaifa-session.ts</span>
                 </div>
               </div>
 
@@ -133,7 +165,7 @@ export default function Hero() {
               <div className="font-mono text-xs sm:text-sm space-y-3 text-gray-300 leading-relaxed">
                 <div className="text-gray-500">// Initialize Developer Profile</div>
                 <div>
-                  <span className="text-purple-400">const</span> <span className="text-cyan-300">architect</span> = {'{'}
+                  <span className="text-purple-400">const</span> <span className="text-cyan-300">engineer</span> = {'{'}
                 </div>
                 <div className="pl-4">
                   <span className="text-gray-400">name:</span> <span className="text-emerald-300">&quot;Huzaifa Abdul Qadir&quot;</span>,
@@ -142,25 +174,22 @@ export default function Hero() {
                   <span className="text-gray-400">stack:</span> [<span className="text-emerald-300">&quot;Next.js&quot;</span>, <span className="text-emerald-300">&quot;React&quot;</span>, <span className="text-emerald-300">&quot;TypeScript&quot;</span>, <span className="text-emerald-300">&quot;Node&quot;</span>],
                 </div>
                 <div className="pl-4">
-                  <span className="text-gray-400">animationEngine:</span> <span className="text-emerald-300">&quot;Framer Motion&quot;</span>,
-                </div>
-                <div className="pl-4">
                   <span className="text-gray-400">status:</span> <span className="text-amber-300">&quot;Ready for Impact 🚀&quot;</span>
                 </div>
                 <div>{'}'};</div>
 
                 <div className="pt-2 text-indigo-400 flex items-center gap-2">
                   <span>❯</span>
-                  <span className="text-gray-200">architect.deployApp(&apos;production&apos;);</span>
+                  <span className="text-gray-200">engineer.deployApp(&apos;production&apos;);</span>
                   <span className="w-2 h-4 bg-indigo-400 inline-block animate-pulse" />
                 </div>
               </div>
 
-              {/* Floating Interactive Micro-badges */}
+              {/* Floating Micro-badges */}
               <div className="pt-4 border-t border-white/10 flex flex-wrap gap-2">
                 <div className="px-3 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-mono flex items-center gap-1.5">
                   <Code className="w-3.5 h-3.5" />
-                  <span>Next.js 14 App Router</span>
+                  <span>Next.js 16 App Router</span>
                 </div>
                 <div className="px-3 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono flex items-center gap-1.5">
                   <Cpu className="w-3.5 h-3.5" />
